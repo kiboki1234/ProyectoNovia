@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Quieres ser mi novia?</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Contenedor de partículas FUERA del contenedor principal -->
+    <div class="particles" id="particles"></div>
+    
+    <!-- Contenido principal -->
+    <div class="main-container">
+        <h1 class="main-question">¿Quieres ser mi novia?</h1>
+        <div class="button-group">
+            <button class="btn btn-yes" onclick="mostrarRespuesta()">Sí, quiero</button>
+            <button class="btn btn-no" id="btnNo">No</button>
+        </div>
+    </div>
+    
+    <!-- Modal de respuesta -->
+    <div class="modal-overlay" id="modalRespuesta">
+        <div class="modal-content">
+            <div class="modal-heart">❤️</div>
+            <h2 class="modal-title">¡Sabía que dirías que sí!</h2>
+            <p class="modal-text">
+                Me haces la persona más feliz del mundo. 
+                Ahora somos oficialmente novios y estoy emocionado por todos los momentos hermosos que viviremos juntos. 
+                Te amo mucho 💕
+            </p>
+            <button class="modal-button" onclick="cerrarModal()">Cerrar</button>
+        </div>
+    </div>
+    
+    <!-- Audio para efectos de sonido -->
+    <audio id="soundMove" preload="auto">
+        <source src="data:audio/wav;base64,UklGRiYAAABXQVZFZm10IBAAAAABAAEAQB8AAAB9AAACABAAZGF0YQIAAAAAAA==" type="audio/wav">
+    </audio>
+    <audio id="soundYes" preload="auto">
+        <source src="data:audio/wav;base64,UklGRjYAAABXQVZFZm10IBAAAAABAAEAQB8AAAB9AAACABAZGF0YQIAAAAAAA==" type="audio/wav">
+    </audio>
+
+    <!-- Script JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
